@@ -72,8 +72,8 @@
 
 ## 📬 التواصل وطلب المشاريع
 
-- 📧 Email: youremail@example.com  
-- 📡 Telegram: https://t.me/yourusername  
+- 📧 Email: mr.blackdevice@gmail.com  
+- 📡 Telegram: https://t.me/BlackLabXbot  
 
 ---
 
