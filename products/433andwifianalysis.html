@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>RF 433MHz & WiFi Analyzer | BlackLabX</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --bg:#020617;
+  --card:#0f172a;
+  --cyan:#22d3ee;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:radial-gradient(circle at center, #0f172a, #020617 70%);
+  color:var(--text);
+  font-family:system-ui,-apple-system;
+  overflow-x:hidden;
+}
+
+section{padding:80px 20px}
+
+/* ========= ANIMATION CORE ========= */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s ease;
+}
+.reveal.active{
+  opacity:1;
+  transform:none;
+}
+
+/* ========= NAV ========= */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 24px;
+  background:#020617dd;
+  backdrop-filter:blur(10px);
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand img{
+  width:36px;height:36px;border-radius:50%;
+}
+nav a{
+  color:var(--muted);
+  font-size:14px;
+  text-decoration:none;
+}
+nav a:hover{color:var(--cyan)}
+
+/* ========= HERO ========= */
+.hero{
+  min-height:50vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.hero h1{
+  font-size:clamp(30px,6vw,54px);
+  margin-bottom:20px;
+}
+.hero p{
+  max-width:800px;
+  color:var(--muted);
+}
+
+/* ========= GALLERY ========= */
+.gallery{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:18px;
+}
+.gallery img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:18px;
+  transition:.5s;
+}
+.gallery img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 30px rgba(34,211,238,.35);
+}
+
+/* ========= CARDS ========= */
+.grid{
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+.card{
+  background:linear-gradient(180deg,#0f172a,#020617);
+  border-radius:22px;
+  padding:28px;
+  border:1px solid #1e293b;
+}
+.card h3{
+  color:var(--cyan);
+  margin-bottom:18px;
+}
+.card li{
+  list-style:none;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+
+/* ========= PRICE ========= */
+.price{
+  text-align:center;
+}
+.price span{
+  font-size:44px;
+  color:var(--cyan);
+  font-weight:900;
+}
+.actions{
+  margin-top:30px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.btn{
+  padding:14px 30px;
+  border-radius:18px;
+  font-weight:800;
+  text-decoration:none;
+  transition:.3s;
+}
+.primary{
+  background:var(--cyan);
+  color:#020617;
+}
+.primary:hover{opacity:.85}
+.outline{
+  border:1px solid var(--cyan);
+  color:var(--cyan);
+}
+.outline:hover{background:rgba(34,211,238,.1)}
+
+/* ========= FOOTER ========= */
+footer{
+  background:#020617;
+  padding:26px 20px;
+  display:flex;
+  justify-content:space-between;
+  font-size:16px;
+  color:var(--muted);
+  flex-wrap:wrap;
+  gap:10px;
+}
+footer span:nth-child(1){color:var(--cyan)}
+footer span:nth-child(2){color:rgb(188, 187, 187)}
+footer span:nth-child(3){color:var(--cyan)}
+
+/* ========= MOBILE ========= */
+@media(max-width:640px){
+  .hero{min-height:80vh}
+  footer{justify-content:center;text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<nav class="reveal">
+  <div class="brand">
+    <img src="../images/logo.png">
+    <strong style="color:var(--cyan)">BlackLabX</strong>
+  </div>
+  <a href="../index.html">العودة</a>
+</nav>
+
+<section class="hero reveal">
+  <div>
+    <h1>RF 433MHz & WiFi Analysis Device</h1>
+    <p>
+جهاز تحليل احترافي للإشارات اللاسلكية، مصمم للباحثين، مشاريع التخرج، واختبار الأنظمة الذكية بأداء موثوق وواجهة أنيقة.
+    </p>
+  </div>
+</section>
+
+<section class="gallery reveal">
+  <img src="../images/rf-wifi-analysis.png">
+  <img src="../images/433mhz-wifi-analysis/img1.jpeg">
+  <img src="../images/433mhz-wifi-analysis/img2.jpeg">
+  <img src="../images/433mhz-wifi-analysis/img3.png">
+</section>
+
+<section class="grid">
+  <div class="card reveal">
+    <h3>🧠 ماذا يقدم الجهاز</h3>
+    <ul>
+      <li>✔ تحليل إشارات RF 433MHz</li>
+      <li>✔ تسجيل وإعادة إرسال الإشارات</li>
+      <li>✔ فحص شبكات WiFi والقنوات</li>
+      <li>✔ واجهة رسومية سهلة</li>
+      <li>✔ مثالي للأبحاث والمشاريع</li>
+    </ul>
+  </div>
+
+  <div class="card reveal">
+    <h3>⚙ المواصفات</h3>
+    <ul>
+      <li>ESP32 Dual Core</li>
+      <li>433MHz RX / TX</li>
+      <li>WiFi 2.4GHz</li>
+      <li>امكانية حفظ المخرجات</li>
+      <li>برمجة Arduino</li>
+    </ul>
+  </div>
+</section>
+
+
+<section class="price reveal">
+  <h2>سعر الجهاز</h2>
+  <span>60$ – 39$</span>
+  <p style="color:var(--muted);margin-top:10px">
+    حسب التخصيص والمواصفات (ملاحظة السعر بالدينار العراقي)
+  </p>
+
+  <div class="actions">
+    <a class="btn primary" href="mailto:mr.blackdevice@gmail.com">اطلب عبر البريد</a>
+    <a class="btn outline" href="https://t.me/BlackLabXbot">اطلب عبر تيليجرام</a>
+  </div>
+</section>
+
+<footer class="reveal">
+  <span>BlackLabX</span>
+  <span>© جميع الحقوق محفوظة</span>
+  <span>mr.blackdevice@gmail.com</span>
+</footer>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting)e.target.classList.add('active');
+  });
+},{threshold:.15});
+reveals.forEach(r=>io.observe(r));
+</script>
+
+</body>
+</html>
