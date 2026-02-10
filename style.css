@@ -1,0 +1,54 @@
+.nav-link{
+  position: relative;
+  color: #e5e7eb;
+  transition: color .3s ease;
+}
+
+.nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #22d3ee;
+  transition: width .3s ease;
+}
+
+.nav-link:hover{
+  color: #22d3ee;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+}
+.hero-bg{
+  background:
+    radial-gradient(circle at center,
+      rgba(19, 120, 136, 0.18) 0%,
+      rgba(11, 15, 25, 0.95) 60%,
+      #01030c 100%);
+}
+/* رموز برمجية خفيفة */
+.hero-bg::before,
+.hero-bg::after{
+  content: "</>  {}  ESP32  IoT  Arduino  #include";
+  position: absolute;
+  font-family: monospace;
+  color: rgba(255,255,255,0.04);
+  font-size: 32px;
+  white-space: pre;
+  user-select: none;
+}
+.hero-bg::before{
+  top: 20%;
+  left: 5%;
+  transform: rotate(-10deg);
+}
+.hero-bg::after{
+  bottom: 15%;
+  right: 5%;
+  transform: rotate(8deg);
+}
+
+  

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackLabX</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-[Cairo]">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-gray-900/90 backdrop-blur shadow-lg">
+    
+      <!-- Logo + Name -->
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Black Device Logo"
+             class="w-10 h-10 rounded-full object-cover border border-cyan-400">
+        <h1 class="text-xl font-bold text-cyan-400">BlackLabX</h1>
+      </div>
+
+      <!-- Menu -->
+      <ul class="flex gap-8 text-sm">
+        <li><a href="#home" class="nav-link">الرئيسية</a></li>
+        <li><a href="#products" class="nav-link">المنتجات</a></li>
+        <li><a href="#about" class="nav-link">من أنا</a></li>
+        <li><a href="#contact" class="nav-link">تواصل</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-6 relative overflow-hidden">
+      <div class="relative z-10">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+          ليش <span class="text-cyan-400">BlackLabX</span> الأفضل؟
+        </h2>
+
+        <p class="text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
+          أنت طالب جامعة أو معهد مهني وتبحث عن مشروع يميّزك؟<br>
+          مع <strong>BlackLabX</strong> نحول فكرتك إلى
+          <strong class="text-white">مشروع احترافي متكامل</strong> —<br>
+          جهاز ذكي، منصة رقمية، أو برنامج عملي جاهز للعرض والتقييم.
+        </p>
+
+        <a href="#products"
+           class="inline-block bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold px-8 py-3 rounded-xl transition">
+          استعرض المنتجات
+        </a>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="px-8 py-16 bg-gray-900">
+      <h3 class="text-3xl font-bold mb-10 text-center">🔧 المنتجات</h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Product 1 -->
+        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-cyan-500/20 transition flex flex-col">
+          <img src="images/rf-wifi-analysis.png" alt="جهاز تحليل اشارات وايفاي وراديو"
+               class="rounded-xl mb-4 object-cover h-40 w-full">
+
+          <h4 class="text-xl font-semibold mb-2">جهاز تحليل اشارات وايفاي وراديو</h4>
+          <p class="text-gray-400 text-sm mb-4">
+            استقبال وارسال اشارات راديو بنطاق 433 ميجا هرتز مع تحليل قنوات الوايفاي وتحليل ازدحامات نطاق 433 ميجا هرتز 
+          </p>
+
+          <span class="text-cyan-400 text-sm mb-6">ESP32</span>
+
+          <a href="#contact"
+             class="mt-auto text-center bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold py-2 rounded-xl transition mb-2">
+            اطلب المنتج
+          </a>
+
+          <a href="products/433andwifianalysis.html"
+             class="text-center border border-cyan-400 text-cyan-400 font-semibold py-2 rounded-xl hover:bg-cyan-500 hover:text-gray-900 transition">
+            عرض التفاصيل
+          </a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-cyan-500/20 transition flex flex-col">
+          <img src="images/rfid-login.png" alt="نظام تسجيل دخول"
+               class="rounded-xl mb-4 object-cover h-40 w-full">
+
+          <h4 class="text-xl font-semibold mb-2">نظام تسجيل دخول</h4>
+          <p class="text-gray-400 text-sm mb-4">
+            نظام تسجيل دخول متكامل بواسطة بطاقات RFID مع حفظ سجلات حضور الموظفين 
+          </p>
+
+          <span class="text-cyan-400 text-sm mb-6">ESP32</span>
+
+          <a href="#contact"
+             class="mt-auto text-center bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold py-2 rounded-xl transition mb-2">
+            اطلب المنتج
+          </a>
+
+          <a href="products/loginwithrfid.html"
+             class="text-center border border-cyan-400 text-cyan-400 font-semibold py-2 rounded-xl hover:bg-cyan-500 hover:text-gray-900 transition">
+            عرض التفاصيل
+          </a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-cyan-500/20 transition flex flex-col">
+          <img src="images/face-analysis.png" alt="تحليل تعابير الوجه"
+               class="rounded-xl mb-4 object-cover h-40 w-full">
+
+          <h4 class="text-xl font-semibold mb-2">تحليل تعابير الوجه</h4>
+          <p class="text-gray-400 text-sm mb-4">
+            كود تمت برمجته بواسطة لغة بايثون لتحليل تعابير الوجه مثل تعبير الغضب, الفرح, الحزن والخوف
+          </p>
+
+          <span class="text-cyan-400 text-sm mb-6">Python</span>
+
+          <a href="#contact"
+             class="mt-auto text-center bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold py-2 rounded-xl transition mb-2">
+            اطلب المنتج
+          </a>
+
+          <a href="products/face-analysis.html"
+             class="text-center border border-cyan-400 text-cyan-400 font-semibold py-2 rounded-xl hover:bg-cyan-500 hover:text-gray-900 transition">
+            عرض التفاصيل
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="px-8 py-16">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Text + Stats -->
+        <div>
+          <h3 class="text-3xl font-bold mb-6">👨‍💻 من <span class="text-cyan-400">BlackLabX ؟</span></h3>
+
+          <p class="text-gray-400 leading-relaxed mb-8">
+            انا علي مهندس ومطوّر مشاريع إلكترونية، متخصص في تصميم وبرمجة
+            <span class="text-cyan-400 font-semibold">الأجهزة الذكية والأنظمة المدمجة</span>
+            باستخدام Arduino و ESP32.
+            أعمل على تحويل الأفكار إلى منتجات عملية قابلة للتنفيذ،
+            مع اهتمام بالأمن السيبراني وربط الأنظمة الذكية.
+          </p>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-6 mb-8 text-center">
+            <div>
+              <span class="text-3xl font-bold text-cyan-400">20+</span>
+              <p class="text-gray-400 text-sm">مشروع منفذ</p>
+            </div>
+            <div>
+              <span class="text-3xl font-bold text-cyan-400">3+</span>
+              <p class="text-gray-400 text-sm">سنوات خبرة</p>
+            </div>
+            <div>
+              <span class="text-3xl font-bold text-cyan-400">100%</span>
+              <p class="text-gray-400 text-sm">حلول مخصصة</p>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="flex flex-wrap gap-4">
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              ⚡ ESP32
+            </span>
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              🔧 Arduino
+            </span>
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              🌐 IoT
+            </span>
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              🛡️ Cyber Security
+            </span>
+             <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              👨‍💻 Python
+            </span>
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              👨‍💻 C++
+            </span>
+            <span class="px-4 py-2 bg-gray-800 rounded-xl text-sm border border-gray-700">
+              👨‍💻 Web front-end
+            </span>
+          </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-end">
+          <img src="images/logo2.png" alt="BlackLabX Logo"
+               class="w-52 h-52 rounded-full border-4 border-cyan-400 shadow-xl object-cover">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-8 py-20 bg-gray-900 relative overflow-hidden">
+
+      <!-- Decorative background -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-10 left-10 text-white/5 font-mono text-4xl rotate-[-8deg]">
+          CONNECT();
+        </div>
+        <div class="absolute bottom-10 right-10 text-white/5 font-mono text-3xl rotate-[6deg]">
+          build.project();
+        </div>
+      </div>
+
+      <div class="relative max-w-4xl mx-auto text-center">
+        <h3 class="text-3xl md:text-4xl font-extrabold mb-6">
+          خلّينا نبدأ <span class="text-cyan-400">مشروعك القادم</span>
+        </h3>
+
+        <p class="text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+          إذا عندك فكرة، مشروع تخرج، أو جهاز ذكي تحب تشوفه واقع —
+          <br>
+          BlackLabX جاهز يحوّلها إلى <strong class="text-white">منتج حقيقي</strong>.
+        </p>
+
+        <!-- Contact Cards -->
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <!-- Email -->
+          <a href="mailto:mr.blackdevice@gmail.com"
+             class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition">
+            <div class="text-cyan-400 text-3xl mb-4">📧</div>
+            <h4 class="font-semibold mb-2">البريد الإلكتروني</h4>
+            <p class="text-gray-400 text-sm">تواصل رسمي وسريع</p>
+          </a>
+
+          <!-- Telegram -->
+          <a href="https://t.me/BlackLabXbot"
+             class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-cyan-400 transition">
+            <div class="text-cyan-400 text-3xl mb-4">💬</div>
+            <h4 class="font-semibold mb-2">تيليجرام</h4>
+            <p class="text-gray-400 text-sm">مناقشة الفكرة مباشرة</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-6 relative overflow-hidden">
+
+      <!-- Decorative tech background -->
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-5 left-5 text-white/5 font-mono text-3xl rotate-[10deg]">
+          <span>&lt;/&gt; BlackLabX</span>
+        </div>
+        <div class="absolute bottom-5 right-5 text-white/5 font-mono text-3xl rotate-[-10deg]">
+          <span>2026 ©</span>
+        </div>
+      </div>
+
+      <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 gap-4">
+
+        <!-- Left: Name + Contact -->
+        <div class="flex items-center gap-4">
+          <span class="text-white font-semibold">BlackLabX</span>
+          <a href="mailto:mr.blackdevice@gmail.com" class="text-cyan-400 hover:underline">mr.blackdevice@gmail.com</a>
+        </div>
+
+        <!-- Center: Copyright -->
+        <div class="text-gray-200 text-sm text-center md:text-center">
+          جميع الحقوق محفوظة © 2026
+        </div>
+
+      </div>
+
+    </footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      const target = document.querySelector(link.getAttribute('href'));
+      if (!target) return;
+
+      const targetPosition =
+        target.getBoundingClientRect().top + window.pageYOffset;
+      const offset =
+        (window.innerHeight / 2) - (target.offsetHeight / 2);
+
+      window.scrollTo({
+        top: targetPosition - offset,
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
