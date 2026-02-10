@@ -11,24 +11,40 @@
 </head>
 <body class="bg-gray-950 text-gray-100 font-[Cairo]">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 flex items-center justify-between px-8 py-4 bg-gray-900/90 backdrop-blur shadow-lg">
-    
-      <!-- Logo + Name -->
-      <div class="flex items-center gap-3">
-        <img src="images/logo.png" alt="Black Device Logo"
-             class="w-10 h-10 rounded-full object-cover border border-cyan-400">
-        <h1 class="text-xl font-bold text-cyan-400">BlackLabX</h1>
-      </div>
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-gray-900/90 backdrop-blur shadow-lg">
 
-      <!-- Menu -->
-      <ul class="flex gap-8 text-sm">
-        <li><a href="#home" class="nav-link">الرئيسية</a></li>
-        <li><a href="#products" class="nav-link">المنتجات</a></li>
-        <li><a href="#about" class="nav-link">من أنا</a></li>
-        <li><a href="#contact" class="nav-link">تواصل</a></li>
-      </ul>
-    </nav>
+    <!-- Logo + Name -->
+    <div class="flex items-center gap-3">
+      <img src="images/logo.png" alt="Black Device Logo"
+           class="w-10 h-10 rounded-full object-cover border border-cyan-400">
+      <h1 class="text-xl font-bold text-cyan-400">BlackLabX</h1>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 text-sm">
+      <li><a href="#home" class="nav-link">الرئيسية</a></li>
+      <li><a href="#products" class="nav-link">المنتجات</a></li>
+      <li><a href="#about" class="nav-link">من أنا</a></li>
+      <li><a href="#contact" class="nav-link">تواصل</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden text-cyan-400 text-2xl focus:outline-none">
+      ☰
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="fixed inset-0 bg-gray-900/95 backdrop-blur z-40 hidden flex flex-col items-center justify-center gap-8 text-lg">
+
+    <a href="#home" class="nav-link" onclick="toggleMenu()">الرئيسية</a>
+    <a href="#products" class="nav-link" onclick="toggleMenu()">المنتجات</a>
+    <a href="#about" class="nav-link" onclick="toggleMenu()">من أنا</a>
+    <a href="#contact" class="nav-link" onclick="toggleMenu()">تواصل</a>
+
+  </div>
 
 
     <!-- Hero Section -->
@@ -273,6 +289,18 @@
       </div>
 
     </footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+function toggleMenu() {
+  mobileMenu.classList.toggle("hidden");
+}
+
+menuBtn.addEventListener("click", toggleMenu);
+</script>
+
 
 <script>
   document.querySelectorAll('a[href^="#"]').forEach(link => {
